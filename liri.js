@@ -132,7 +132,7 @@ function movieFunction() {
 function doWhatItSaysFunction() {
     fs.readFile("random.txt", "utf8", function(error, body) {
         console.log(body);
-        var bodyArr = body.split(", ");
+        var bodyArr = body.split(",");
         if (bodyArr[0] === "my-tweets"){
             twitterFunction();
         } else if (bodyArr[0] === "spotify-this-song"){
